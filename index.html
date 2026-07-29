@@ -499,7 +499,7 @@ function renderVisitorsTab(){
 }
 async function saveVisitor(){
   const name = document.getElementById('vis-name').value.trim();
-  if (!name){ toast('Enter the guest\\'s name'); return; }
+  if (!name){ toast("Enter the guest's name"); return; }
   const record = {
     Date: document.getElementById('vis-date').value || todayISO(),
     Name: name,
